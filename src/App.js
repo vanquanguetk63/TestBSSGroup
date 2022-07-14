@@ -14,11 +14,13 @@ import useRandomUser from './hook/useRandomUser';
 const App = () => {
   const {randomUser, getAnotherRandomUser} = useRandomUser();
 
+  const fetchAnotherUser = () => {
+    getAnotherRandomUser();
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity
-        onPress={() => getAnotherRandomUser()}
-        style={styles.button}>
+      <TouchableOpacity onPress={fetchAnotherUser} style={styles.button}>
         <Text style={styles.titleButton}>Fetch Random</Text>
       </TouchableOpacity>
 
