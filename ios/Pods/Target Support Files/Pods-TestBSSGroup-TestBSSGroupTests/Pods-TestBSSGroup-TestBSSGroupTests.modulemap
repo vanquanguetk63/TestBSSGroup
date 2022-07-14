@@ -1,0 +1,6 @@
+module Pods_TestBSSGroup_TestBSSGroupTests {
+  umbrella header "Pods-TestBSSGroup-TestBSSGroupTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
